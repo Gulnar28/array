@@ -22,16 +22,16 @@ let images = [
     
   ];
 
-let marka_s =document.getElementById("marka");
-let model_s =document.getElementById("model"); 
 
-
-
+     let marka_s =document.getElementById("marka");
+     let model_s =document.getElementById("model"); 
+     let mes = document.getElementById("message");
+     let img=document.getElementById("img");
 
 
 
 function markaSelect() {
-    let data = `<option value="" disabled selected>Marka Select /option>`;
+    let data = `<option value="" disabled selected>Marka Select</option>`;
     for (let i = 0; i < marka.length; i++) {
       data += `<option value="${i}">${marka[i]}</option>`;
     }
@@ -40,24 +40,23 @@ function markaSelect() {
 
 markaSelect();
 
+
+
 function modelSelect() {
     let value = marka_s.value;
     let data = `<option value="" disabled selected>Select Model</option>`;
     for (let i = 0; i < model[value].length; i++) {
       data += `<option value="${i}">${model[value][i]}</option>`;
     }
-    model_s.innerHTML = data;
-   
-   
+    model_s.innerHTML = data; 
 }
 
+
+
+
 function print(){
-    let mes = document.getElementById("message");
     
-    let img=document.getElementById("img");
-
     mes.innerText=`${marka[marka_s.value]} ${model[marka_s.value][model_s.value]}`
-
     img.src = images[marka_s.value][model_s.value]
 }
 

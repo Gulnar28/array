@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    margin:250px;
+    margin-left:550px;
+}
+
+#message{
+    color:green;
+    font-weight: bold;
+    margin-top:37px;
+    font-size:24px;
+}
+
+img{
+    margin-top:20px;
+}
