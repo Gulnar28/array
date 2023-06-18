@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
-    margin:250px;
-    margin-left:550px;
-}
+
 
 #message{
     color:green;
@@ -18,4 +15,7 @@ body{
 
 img{
     margin-top:20px;
+    margin-left:510px;
+    margin-top: 150px;
+ 
 }
